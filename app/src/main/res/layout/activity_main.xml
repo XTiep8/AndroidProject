@@ -8,7 +8,7 @@
     android:padding="16dp"
     android:layout_marginTop="70dp"
     android:background="@color/background"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <TextView
         android:id="@+id/text_title"
