@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
     android:layout_marginTop="70dp"
-    android:background="@color/background"
-    tools:context=".MainActivity">
+    android:background="@color/background">
 
     <TextView
         android:id="@+id/text_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quản Lý Sân Bóng"
+        android:text="Đăng Ký"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/primary"
@@ -23,68 +20,57 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp" />
 
-    <Button
-        android:id="@+id/button_field_management"
+    <EditText
+        android:id="@+id/edit_username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Quản lý sân bóng"
-        android:backgroundTint="@color/primary"
+        android:hint="Tên đăng nhập"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/edit_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edit_confirm_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Xác nhận mật khẩu"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/edit_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintTop_toBottomOf="@id/edit_confirm_password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp" />
 
     <Button
-        android:id="@+id/button_service_management"
+        android:id="@+id/button_back"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Quản lý dịch vụ"
-        android:backgroundTint="@color/primary"
-        app:layout_constraintTop_toBottomOf="@id/button_field_management"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/button_booking_management"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Quản lý lịch đặt sân"
-        android:backgroundTint="@color/primary"
-        app:layout_constraintTop_toBottomOf="@id/button_service_management"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/button_statistics"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Thống kê"
-        android:backgroundTint="@color/primary"
-        app:layout_constraintTop_toBottomOf="@id/button_booking_management"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/button_help"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Trợ giúp"
-        android:backgroundTint="@color/primary"
-        app:layout_constraintTop_toBottomOf="@id/button_statistics"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/button_logout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Đăng xuất"
+        android:text="Quay lại"
         android:backgroundTint="@color/secondary"
-        app:layout_constraintTop_toBottomOf="@id/button_help"
+        app:layout_constraintTop_toBottomOf="@id/button_register"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
