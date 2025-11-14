@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuanLySanBong09">
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +20,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.FieldManagementActivity" />
+        <activity android:name=".activity.ServiceManagementActivity" />
+        <activity android:name=".activity.BookingManagementActivity" />
+        <activity android:name=".activity.AddEditFieldActivity" />
+        <activity android:name=".activity.AddEditServiceActivity" />
+        <activity android:name=".activity.AddEditBookingActivity" />
+        <activity android:name=".activity.BookingDetailActivity" />
+        <activity android:name=".activity.StatisticsActivity" />
+        <activity android:name=".activity.HelpActivity" />
     </application>
 
 </manifest>
